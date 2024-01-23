@@ -6,8 +6,11 @@ To use this sketch, make sure you have GxEPD2 and the Adafruit GFX Library insta
 On sketch, look for these lines to set your board:
 
 // Use this for 3 color 2.13" "MH-ET LIVE" branded display. Set your own pins (these are what I used for my ESP32 S3 set up)
+
 GxEPD2_3C<GxEPD2_213c, GxEPD2_213c::HEIGHT> display(GxEPD2_213c(/*CS=15*/ 38, /*DC=*/48, /*RST=*/47, /*BUSY=*/21)); // GDEW0213Z16
+
 // Or comment above and uncomment below to use BW display:
+
 //GxEPD2_BW<GxEPD2_213_GDEY0213B74, GxEPD2_213_GDEY0213B74::HEIGHT> display(GxEPD2_213_GDEY0213B74(/*CS=D8*/ 38, /*DC=D3*/ 48, /*RST=D4*/ 47, /*BUSY=D2*/ 21)); // GDEY0213B74 122x250, SSD1680, (FPC-A002 20.04.08)
 
 Don't forget to set your own pins.
