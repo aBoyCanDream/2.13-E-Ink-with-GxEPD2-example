@@ -35,12 +35,14 @@
 #include "GxEPD2_display_selection_added.h"
 
 // alternately you can copy the constructor from GxEPD2_display_selection.h or GxEPD2_display_selection_added.h to here
+// I'm using this method because it's easier. Just copy one of the profiles in the files above and paste it below. The examples below are for ESP32's. If you have another board, find it in the .h files above
 
-// Use this for 3 color 2.13" "MH-ET LIVE" branded display. Set your own pins (these are what I used for my ESP32 S3 set up)
-//GxEPD2_3C<GxEPD2_213c, GxEPD2_213c::HEIGHT> display(GxEPD2_213c(/*CS=15*/ 38, /*DC=*/48, /*RST=*/47, /*BUSY=*/21)); // GDEW0213Z16
-// Or comment above and uncomment below to use BW display:
-GxEPD2_BW<GxEPD2_213_GDEY0213B74, GxEPD2_213_GDEY0213B74::HEIGHT> display(GxEPD2_213_GDEY0213B74(/*CS=D8*/ 38, /*DC=D3*/ 48, /*RST=D4*/ 47, /*BUSY=D2*/ 21)); // GDEY0213B74 122x250, SSD1680, (FPC-A002 20.04.08)
+// Use this for 3 color 2.13" "MH-ET LIVE" branded display. Set your own pins (these are what I used for my ESP32 S3 set up). Both of these profiles worked. But I spent most of the time with the first
+GxEPD2_3C<GxEPD2_213c, GxEPD2_213c::HEIGHT> display(GxEPD2_213c(/*CS=15*/ 38, /*DC=*/48, /*RST=*/47, /*BUSY=*/21)); // GDEW0213Z16
+//GxEPD2_3C<GxEPD2_213_Z19c, GxEPD2_213_Z19c::HEIGHT> display(GxEPD2_213_Z19c(/*CS=5*/ 38, /*DC=*/ 48, /*RST=*/ 47, /*BUSY=*/ 21)); // GDEH0213Z19 104x212, UC8151D
 
+// For BW display, comment above and uncomment below
+//GxEPD2_BW<GxEPD2_213_GDEY0213B74, GxEPD2_213_GDEY0213B74::HEIGHT> display(GxEPD2_213_GDEY0213B74(/*CS=D8*/ 38, /*DC=D3*/ 48, /*RST=D4*/ 47, /*BUSY=D2*/ 21)); // GDEY0213B74 122x250, SSD1680, (FPC-A002 20.04.08)
 
 void setup()
 {
