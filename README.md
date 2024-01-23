@@ -13,3 +13,4 @@ GxEPD2_3C<GxEPD2_213c, GxEPD2_213c::HEIGHT> display(GxEPD2_213c(/*CS=15*/ 38, /*
 Don't forget to set your own pins.
 
 If you haven't bought the board yet, my 2 cents: Don't buy the three color if you plan on doing any regular updates. The 30 second refresh rate is excruciatingly slow and it barely handles partial refreshes. The BW version is more usable and the partial refresh works great.
+![2-13-2-13-Inch-Epaper-Module-E-paper-E-Ink-EInk-Display-Screen-SPI-Support](https://github.com/aBoyCanDream/2.13-E-Ink-with-GxEPD2-example/assets/132575647/fd6e721f-a554-4549-bbef-9762dabebb07)
