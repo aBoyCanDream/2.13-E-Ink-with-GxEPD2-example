@@ -1,7 +1,7 @@
 # 2.13-E-Ink-with-GxEPD2-example
-Set up for using 2.13" "MH-ET LIVE" branded E-ink Displays with GxEPD2. It looks like the BW display uses the SSD1680 chip and the color uses another.
+Set up for using 2.13" "MH-ET LIVE" branded E-ink Displays with GxEPD2. It looks like the BW display uses the SSD1680 chip and is 122x250 and the color uses another chip at 104x212. But as generic boards they can probably be changed at any time.
 
-To use this sketch, make sure you have GxEPD2 installed. on Arduino IDE v2.2.1, you can do this in Library Manager. On older IDE, just download the library @ https://github.com/ZinggJM/GxEPD2 and put folder in your "/Arduino/libraries" folder.
+To use this sketch, make sure you have GxEPD2 and the Adafruit GFX Library installed. on Arduino IDE v2.2.1, you can do this in Library Manager. On older IDE, just download the library @ https://github.com/ZinggJM/GxEPD2 and @ https://github.com/adafruit/Adafruit-GFX-Library and put folder in your "/Arduino/libraries" folder.
 
 On sketch, look for these lines to set your board:
 
